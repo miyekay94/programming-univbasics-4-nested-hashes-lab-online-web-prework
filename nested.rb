@@ -65,6 +65,8 @@ def adding_matz
           :languages => ["C"]
         }
      }
+programmer_hash = {grace_hopper:"COBOL,FORTRAN", alan_kay:"Smalltalk,LISP", dennis_ritchie:"Unix,C"
+
 programmer_hash [:yukihiro_matsumoto => {
    :known_for => "Ruby",
    :languages => ["LISP", "C"]]
