@@ -76,6 +76,7 @@ programmer_hash = {grace_hopper:"COBOL,FORTRAN", alan_kay:"Smalltalk,LISP", denn
 }
 end
 
+
 def changing_alan
 	programmer_hash = 
  		{
@@ -92,30 +93,20 @@ def changing_alan
           :languages => ["C"]
         }
      }
-     #change what Alan Kay is :known_for to the value of the alans_new_info variable. 
+
+#change what Alan Kay is :known_for to the value of the alans_new_info variable. 
      alans_new_info = "GUI"
      
      describe "#changing_alan" do
     #it "operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash" 
     
-      expect(changing_alan[:alan_kay][:known_for]).to eq("GUI")
+expect(changing_alan[:alan_kay][:known_for]).to eq("GUI")
     end
 
-def adding_to_dennis
-	programmer_hash = 
- 		{
-        :grace_hopper => {
-          :known_for => "COBOL",
-          :languages => ["COBOL", "FORTRAN"]
-        },
-        :alan_kay => {
-          :known_for => "Object Orientation",
-          :languages => ["Smalltalk", "LISP"]
-        },
-        :dennis_ritchie => {
-          :known_for => "Unix",
-          :languages => ["C"]
-        }
-     }
+def adding_to_dennis do
+     #it "operates on the programmer_hash and adds 'Assembly' to Dennis Ritchie's languages, returning the newly-added-to-hash" do
+      
+      expect(adding_to_dennis[:dennis_ritchie][:languages][1]).to include("Assembly")
+    end
 
 end
