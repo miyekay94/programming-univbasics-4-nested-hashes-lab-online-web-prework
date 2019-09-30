@@ -96,10 +96,10 @@ def changing_alan
      alans_new_info = "GUI"
      
      describe "#changing_alan" do
-    it "operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash" do
+    #it "operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash" 
+    
       expect(changing_alan[:alan_kay][:known_for]).to eq("GUI")
     end
-end
 
 def adding_to_dennis
 	programmer_hash = 
