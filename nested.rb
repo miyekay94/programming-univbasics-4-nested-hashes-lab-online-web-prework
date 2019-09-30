@@ -37,6 +37,8 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
+expect(alan_kay_is_known_for).to eq("Object Orientation")
+
 end
 
 def dennis_ritchies_language
